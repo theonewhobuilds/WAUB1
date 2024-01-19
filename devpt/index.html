@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./calc.js" type="text/javascript"></script> 
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <h1 style="text-align:center; color:red; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Calculator App</h1>
+    
+    <div class="container">
+
+    <br>
+
+    <table>
+
+        <tr>
+
+            <td colspan="3"><input type='text' id='result' class ='screen' style="text-align: right;"></td>
+
+            <td>
+
+                <input type='button' value = 'C' onclick="clearScreen()" class="clear"/>
+
+            </td>
+
+        </tr>
+
+    </table>
+ 
+    <div class="keys">
+
+    <input type="button" value="7" class="button" onClick="controlFunctions('7')"></input>
+
+    <input type="button" value="8" class="button " onClick="controlFunctions('8')"></input>
+
+    <input type="button" value="9" class="button" onClick="controlFunctions('9')"></input>
+
+    <input type="button" value="/" class="operator" onClick="controlFunctions('/')"></input>
+
+    <input type="button" value="4" class="button" onClick="controlFunctions('4')"></input>
+
+    <input type="button" value="5" class="button" onClick="controlFunctions('5')"></input>
+
+    <input type="button" value="6" class="button" onClick="controlFunctions('6')"></input>
+
+    <input type="button" value="x" class="operator" onClick="controlFunctions('*')"></input>
+
+    <input type="button" value="1" class="button" onClick="controlFunctions('1')"></input>
+
+    <input type="button" value="2" class="button" onClick="controlFunctions('2')"></input>
+
+    <input type="button" value="3" class="button" onClick="controlFunctions('3')"></input>
+
+    <input type="button" value="-" class="operator" onClick="controlFunctions('-')"></input>
+
+    <input type="button" value="0" class="button" onClick="controlFunctions('0')"></input>
+
+    <input type="button" value="." class="button" onClick="controlFunctions('.')"></input>
+
+    <input type="button" value= "=" class="button equal-sign" onClick="solve()"></input>
+
+    <input type="button" value="+" class="operator" onClick="controlFunctions('+')"></input>
+
+</div> 
+
+</div>
+
+</body>
